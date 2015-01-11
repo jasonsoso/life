@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Visu pagājušo gadu esmu kaut kā visai veiksmīgi pieturējies pie vidēji viena raksta mēnesī, kas ir tīri normāli, jo v...">
+    
+    <title>Aigars Dzerviniks</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic&subset=latin,latin-ext" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/lift/assets/css/style.css">
+
+    <link rel="alternate" type="application/rss+xml" title="Aigars Dzerviniks" href="/feed.xml" />
+  </head>
+  <body>
+    <header id="main-header">
+      <a href="/lift/"><img src="/lift/assets/images/me.jpg" alt="Aigars Dzerviniks"></a>
+
+      <h1>Aigars Dzerviniks</h1>
+
+      <p>
+        A software writer chosen by destiny to fight against evil bugs and unleash the power of snarkiness upon the internet.
+      </p>
+
+      <nav>
+        <a href="/lift/">Home</a>
+      </nav>
+
+      <div>
+        <a href="http://twitter.com/aigarsdz"><i class="fa fa-twitter"></i></a>
+        <a href="http://instagram.com/aigarsdz"><i class="fa fa-instagram"></i></a>
+        <a href="http://github.com/aigarsdz"><i class="fa fa-github"></i></a>
+        <a href="dzerviniks.aigars@outlook.com"><i class="fa fa-envelope"></i></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="clearfix">
+        <span id="menu-switch-container">
+          <a href="#main-header" id="menu-switch-on"><i class="fa fa-bars"></i></a>
+          <a href="#" id="menu-switch-off"><i class="fa fa-bars"></i></a>
+        </span>
+        <a href="/lift/">Aigars Dzerviniks</a>
+      </div>
+      <div class="interneta-domēni-un-jekyll-motīvi"><section>
+  <article>
+    <h2>Interneta domēni un Jekyll motīvi</h2>
+    <div class="meta">
+      <time></time> | 
+    </div>
+
+    <p>Visu pagājušo gadu esmu kaut kā visai veiksmīgi pieturējies pie vidēji viena raksta mēnesī, kas ir tīri normāli, jo visas savas trakās domas izlieku Day One aplikācijā, un līdz blogam nonāk tikai jēdzīgākās, tomēr sametās bēdīgi, jo redzu, ka apkārt visi dikti jestri blogo, tāpēc varētu pacensties uzdrukāt… nu nezinu, varbūt pa 2 rakstiem mēnesī. Šis būs vairāk tāds kā keeping-you-up-to-date tipa raksts par saviem pēdējās nedēļas nedarbiem.</p>
+
+<p>Kopš atgriezos pie Jekyll, esmu mainījis šī bloga izskatu daudz, daudz biežāk nekā atjauninājis tā saturu, bet nu jūs vairs nevarat mani par to vainot, jo man ir valīds attaisnojums - manis vaiga sviedros drukātais motīvs “<a href="https://github.com/aigarsdz/brume" title="aigarsdz/brume">brume</a>” ir nonācis līdz <a href="http://jekyllthemes.org" title="Jekyll Themes">Jekyll Themes</a> lapai, kas ir go-to vietne, uz kurieni doties, lai atrastu jaunu izskatu savam Jekyll bāzētajam blogam. Tas ir gandrīz tāpat kā <a href="http://theme.wordpress.com" title="WordPress Themes for Blogs at WordPress.com">šī te lapa</a> WordPress lietotājiem.</p>
+
+<p>Iemesls, kādēļ esmu tik kaitinoši sajūsmināts par šo notikumu slēpjas faktā, ka es neesmu dizaineris un visi mani iepriekšējie veidojumi bija vai nu nelietīgi nokopēti no citām vietnēm, vai pilnīga izgāšanās. Nesaku, ka “brume” ir perfekts, bet man tas ļoti patīk, un es turpināšu viņu aktīvi uzlabot, tāpēc nenoslinkoju un padalījos ar masām.</p>
+
+<p>Otrā trakā lieta, ko esmu izdarījis ir pārvākšanās no omulīgās <a href="http://dzerviniks.lv" title="Aigars Dzerviniks">dzerviniks.lv</a> interneta adreses uz <a href="http://dzerviniks.com" title="Aigars Dzerviniks">dzerviniks.com</a>. Pa lielam bloga lasītājiem par to nav jādomā. Abi domēni strādā un turpinās strādāt, vienkārši, mēģinot ielauzties .lv adresē, dusmīgs web serveris jūs padzīs prom uz .com, kurš man dod vienu būtisku priekšrocību - iespēju izmantot GitHub CDN.</p>
+
+<p>Ja neesat draugos ar visām šīm muļķīgajām web lietā, leciet uz pēdējo paragrāfu, pretējā gadījumā paskaidrošu, ka līdz šim mans blogs un visas GitHub lapas tika servētas pa tiešo no GitHub serveriem, kas, kā izskatās, kopīgi izklaidējas ASV. Pavisam nesen GitHub paziņoja, ka turpmāk <a href="https://github.com/blog/1715-faster-more-awesome-github-pages" title="Faster, More Awesome GitHub Pages">visas lapas centīsies servēt no globālajiem CDN serveriem</a>. Ja jūs mierīgi dzīvojaties ar GitHub apakšdomēnu, tad viss notiek automātiski, bet savu domēnu gadījumā ir jāveic zināmas izmaiņas.</p>
+
+<p>Tā kā dzerviniks.lv ir, tā saucamais, apex domain, tad pieslēgt CDN spēku es varēju tikai, izveidojot ALIAS ierakstu uz GitHub, bet, par nelaimi, .lv domēna turētājs NIC, šādu iespēju nepiedāvā, tāpēc visi mani prieki noplaka. Aizvakar prātā iešāvās neprātīga doma - izmantot DNS provaideri, kuram tāda pakalpojuma nebūtu žēl, un tas nozīmēja, ka jāatsakās no .lv domēna. Nav jau diža problēma. Atlika vien izdomāt, vai gribu tradicionālo .com, vai kaut ko nejaukāku, piemēram, .me, kas patiesībā ir lētāks. Izšķīros par .com, jo tas ir general purpose, tātad nebūs iemesla to mainīt, ja vienu dienu pārveidošu šo lapu par kāda pagrīdes kulta forumu.</p>
+
+<p>Galu galā nevienu jau neinteresē, kāds tev domēns (ja vien tas nav foršākais domēns pasaulē), kamēr vien var piekļūt lapai un tā izskatās lietojama. Par izskatu runājot, gaidu no jums likmes par nākošo datumu, kad šeit visu ~~salauzīšu~~ pamainīšu! Uzvarētājam netiks pilnīgi nekas… nu ok, varbūt pieminēšu Twitter 😒</p>
+
+  </article>
+</section>
+</div>
+
+      <footer>
+        <p>&copy; 2014, Aigars Dzerviniks</p>
+      </footer>
+    </main>
+  </body>
+</html>
